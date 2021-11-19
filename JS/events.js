@@ -27,7 +27,7 @@ AFRAME.registerComponent("cursor-event", {
         });
 
         this.el.setAttribute("material", {
-          color: "yellow",
+          color: "blue",
           opacity: 1,
         });
       }
