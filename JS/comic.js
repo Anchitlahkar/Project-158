@@ -18,17 +18,17 @@ AFRAME.registerComponent("comics", {
         url: "./images/Eternals.jpg",
       },
       {
-        id: "im-captiain-america",
+        id: "im_captain_america",
         title: "I am Captain America",
         url: "./images/im_captain_america.jpg",
       },
       {
-        id: "iron-man-annual",
+        id: "iron_man_annual",
         title: "Iron Man Annual",
         url: "./images/iron_man_annual.jpg",
       },
       {
-        id: "the-death-of-doctor-strange",
+        id: "the_death_of_doctor_strange",
         title: "The Death Of Doctor Strange",
         url: "./images/the_death_of_doctor_strange.jpg",
       },
