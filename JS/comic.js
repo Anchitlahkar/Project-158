@@ -1,5 +1,8 @@
 AFRAME.registerComponent("comics", {
-  schema: {},
+  schema: {
+    state: { type: "string", default: "list" },
+    selectedCard: { type: "string", default: "#card1" },
+  },
 
   init: function () {
     // Do something when component first attached.
@@ -110,5 +113,9 @@ AFRAME.registerComponent("comics", {
     entityEl.setAttribute("visible", true);
 
     return entityEl;
+  },
+
+  tick: function () {
+    const { state } = this.el.getAttribute("comics");
   },
 });

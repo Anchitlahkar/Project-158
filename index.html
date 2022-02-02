@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
     <script src="./JS/comic.js"></script>
     <script src="./JS/events.js"></script>
+
     <title>Project 157</title>
 </head>
 
 <body>
     <a-scene background="color: black">
-        <a-entity id="comic-container" comics cursor-listener></a-entity>
+        <a-entity id="comic-container" comics cursor-event info_bar></a-entity>
 
         <a-camera id="main_cam">
             <a-entity position="5.55055 6.0224 -8.40059"
@@ -24,10 +26,14 @@
 
             <a-entity id="camera-cursor" cursor position="0 0 -1"
                 geometry="primitive: ring; radiusInner:0.02; radiusOuter: 0.03" material="color: #fff; shader: flat">
+            </a-entity>
+
+            <a-plane id="comic-text" position="1 -16.14177 -11.2474" rotation="" scale="30.08729 8.51646 1"
+                visible="false"></a-plane>
 
         </a-camera>
     </a-scene>
 
 </body>
 
-</html>
+</html
